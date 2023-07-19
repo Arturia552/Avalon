@@ -1,5 +1,5 @@
 <template>
-  <el-button @click="add">按钮</el-button>
+  <el-button @click="add"> 按钮 </el-button>
   <div>hello,{{ count }}</div>
 </template>
 
