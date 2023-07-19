@@ -18,6 +18,7 @@ export default defineConfig({
         items: [
           { text: "Markdown Examples", link: "/markdown-examples" },
           { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "kkfileview改造及部署", link: "/kkfileview" },
         ],
       },
     ],
