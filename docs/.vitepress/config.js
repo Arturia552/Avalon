@@ -8,16 +8,14 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "主页", link: "/" },
+      { text: "笔记", link: "/kkfileview" },
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "笔记",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
           { text: "kkfileview改造及部署", link: "/kkfileview" },
         ],
       },
