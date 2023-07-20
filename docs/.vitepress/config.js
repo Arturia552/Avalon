@@ -17,6 +17,7 @@ export default defineConfig({
         text: "笔记",
         items: [
           { text: "kkfileview改造及部署", link: "/kkfileview" },
+          { text: "centos7升级git",link:'/centos-git'}
         ],
       },
     ],

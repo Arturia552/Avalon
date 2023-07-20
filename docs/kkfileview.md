@@ -46,7 +46,7 @@ ENTRYPOINT ["java","-Dfile.encoding=UTF-8","-Dspring.config.location=/opt/kkFile
 docker build -t  kkfw:1.0 . 
 ```
 运行容器
-```docker
+```shell
 docker run -d --name kkfileview -v /docker/kkfile/application.properties:/opt/kkFileView-4.4.0-SNAPSHOT/config/application.properties  -p 8012:8012 kkfw:1.0 
 ```
 通过ip:8012访问服务
