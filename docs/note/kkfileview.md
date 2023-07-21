@@ -12,7 +12,7 @@ git clone https://gitee.com/kekingcn/file-online-preview.git
 
 
 ```js
-// 
+ 
 downloadOrSave(options) {
   if (this.pdfDocument?.annotationStorage.size > 0) {     // [!code --]
     this.save(options);   // [!code --]
@@ -42,7 +42,7 @@ ENV KKFILEVIEW_BIN_FOLDER /opt/kkFileView-4.4.0-SNAPSHOT/bin
 ENTRYPOINT ["java","-Dfile.encoding=UTF-8","-Dspring.config.location=/opt/kkFileView-4.4.0-SNAPSHOT/config/application.properties","-jar","/opt/kkFileView-4.4.0-SNAPSHOT/bin/kkFileView-4.4.0-SNAPSHOT.jar"]
 ```
 在linux环境中将上述两个文件放在同一目录，运行以下命令构造docker镜像
-```docker
+```shell
 docker build -t  kkfw:1.0 . 
 ```
 运行容器
