@@ -9,6 +9,6 @@ hero:
   actions:
     - theme: brand
       text: 笔记
-      link: /kkfileview
+      link: /note/kkfileview
 
 ---
