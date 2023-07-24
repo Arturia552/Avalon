@@ -8,6 +8,5 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "element-plus": "^2.3.5"
   }
 }
