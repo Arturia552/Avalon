@@ -21,6 +21,7 @@ export default defineConfig({
           items: [
             { text: "kkfileview改造及部署", link: "/note/kkfileview" },
             { text: "centos7升级git", link: "/note/centos-git" },
+            { text: "IDEA远程debug",link:"/note/idea-remote-debug"}
           ],
         },
       ],
