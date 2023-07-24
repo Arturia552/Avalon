@@ -1,4 +1,4 @@
-# centos安装更新git
+# centos安装更新git test
 
 由于centos7自带git版本比较低，无法满足部分软件如vscode的要求，故须手动升级到更高版本。
 
