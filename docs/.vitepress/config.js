@@ -29,7 +29,7 @@ export default defineConfig({
         {
           text: "数据库",
           collapsed: false,
-          item: [{ text: "mongo", link: "/mongo" }],
+          item: [{ text: "mongoDB时间序列", link: "/database/mongo" }],
         },
       ],
     },
