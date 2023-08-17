@@ -1,8 +1,9 @@
-# centos安装更新git
+# centos 安装更新 git
 
-由于centos7自带git版本比较低，无法满足部分软件如vscode的要求，故须手动升级到更高版本。
+由于 centos7 自带 git 版本比较低，无法满足部分软件如 vscode 的要求，故须手动升级到更高版本。
 
-## 删除自带git
+## 删除自带 git
+
 ```shell
 yum remove git -y
 ```
@@ -14,7 +15,8 @@ yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel -y
 yum install gcc perl-ExtUtils-MakeMaker -y
 ```
 
-## 安装git
+## 安装 git
+
 ```shell
 cd /usr/share
 wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.39.3.tar.gz
@@ -33,4 +35,26 @@ ln -s  /usr/local/git/bin/git git
 git --version
 # 结果
 git version 2.39.3
+```
+
+## linux 上传代码至 github
+
+```shell
+# 设置全局用户名和邮箱
+git config --global user.name "用户名"
+git config --global user.email "邮箱"
+
+# 生成ssh密钥，一路enter
+ssh-keygen -t rsa -b 4096 -C "邮箱"
+
+# 复制公钥
+cd ~/.ssh
+cat id_rsa.pub
+```
+
+进入 github 官网，右上角点击头像 Settings->SSh and GPG keys -> New SSH key，把公钥复制到指定位置
+
+```shell
+# 测试github连接
+ssh -T git@github.com
 ```
