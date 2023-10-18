@@ -26,3 +26,7 @@ npm install -g pnpm
 pnpm config set registry https://registry.npmmirror.com/
 ln -s /usr/local/nodejs/bin/pnpm /usr/local/bin
 ```
+安装完pnpm之后，但pnpm -v时报错-bash: pnpm: command not found，可输入以下命令修复
+```shell
+curl -fsSL "https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linuxstatic-x64" -o /bin/pnpm; chmod +x /bin/pnpm;
+```
