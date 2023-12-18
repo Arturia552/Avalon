@@ -22,7 +22,8 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: doc/.vitepress/dist
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: doc/.vitepress/dist
           single-commit: true
           clean: true
