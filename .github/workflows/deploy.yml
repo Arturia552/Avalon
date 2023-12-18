@@ -17,10 +17,12 @@ jobs:
         with:
           node-version: 16
           cache: "pnpm"
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run docs:build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: doc/.vitepress/dist
+          single-commit: true
+          clean: true
