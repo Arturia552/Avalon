@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: 16
           cache: "pnpm"
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - run: pnpm run docs:build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
