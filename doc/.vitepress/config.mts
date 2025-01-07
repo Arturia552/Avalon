@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: "🏚�?主页", link: "/" },
       { text: "📓 笔记", link: "/note/kkfileview" },
-      { text: "🚀 数据�?, link: "/database/mongo" },
+      { text: "🚀 数据�?", link: "/database/mongo" },
     ],
 
     sidebar: {
