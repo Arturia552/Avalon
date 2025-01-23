@@ -23,6 +23,7 @@ export default defineConfig({
             { text: "centos7升级git", link: "/note/centos-git" },
             { text: "IDEA远程debug", link: "/note/idea-remote-debug" },
             { text: "linux安装nodejs", link: "/note/linux-node" },
+            { text: 'ubuntu安装vsftp', link: "/note/vsftp"}
           ],
         },
       ],
