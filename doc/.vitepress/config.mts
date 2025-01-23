@@ -8,9 +8,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "🏚�?主页", link: "/" },
+      { text: "🏚️ 主页", link: "/" },
       { text: "📓 笔记", link: "/note/kkfileview" },
-      { text: "🚀 数据�?", link: "/database/mongo" },
+      { text: "🚀 数据库", link: "/database/mongo" },
     ],
 
     sidebar: {
@@ -28,7 +28,7 @@ export default defineConfig({
       ],
       "/database/": [
         {
-          text: "数据�",
+          text: "数据库",
           collapsed: false,
           items: [{ text: "mongoDB时间序列", link: "/database/mongo" }],
         },
@@ -38,5 +38,5 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
   },
-  lastUpdated: true, // 开启最后更新时间提�?
+  lastUpdated: true, // 开启最后更新时间提示
 })
