@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,11 +6,10 @@ export default defineConfig({
   description: "Avalon",
   base: "/",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "🏚️ 主页", link: "/" },
       { text: "📓 笔记", link: "/note/kkfileview" },
-      { text: "🚀 数据库", link: "/database/mongo" },
+      { text: "🚀 数据库", link: "/database/闭包表" },
     ],
 
     sidebar: {
@@ -23,7 +22,7 @@ export default defineConfig({
             { text: "centos7升级git", link: "/note/centos-git" },
             { text: "IDEA远程debug", link: "/note/idea-remote-debug" },
             { text: "linux安装nodejs", link: "/note/linux-node" },
-            { text: 'ubuntu安装vsftp', link: "/note/vsftp"}
+            { text: "ubuntu安装vsftp", link: "/note/vsftp" },
           ],
         },
       ],
@@ -31,7 +30,17 @@ export default defineConfig({
         {
           text: "数据库",
           collapsed: false,
-          items: [{ text: "mongoDB时间序列", link: "/database/mongo" }],
+          items: [
+            {
+              text: "物化路径权限模型",
+              link: "/database/ruoyi物化路径权限模型",
+            },
+             {
+              text: "闭包表权限模型",
+              link: "/database/闭包表",
+            },
+            { text: "IotDB连续查询统计实践", link: "/database/iotdb连续查询统计方案" },
+          ],
         },
       ],
     },
@@ -40,4 +49,4 @@ export default defineConfig({
     ],
   },
   lastUpdated: true, // 开启最后更新时间提示
-})
+});
