@@ -40,6 +40,7 @@ export default defineConfig({
               link: "/database/闭包表",
             },
             { text: "IotDB连续查询统计实践", link: "/database/iotdb连续查询统计方案" },
+            { text: "时序数据库时区设计", link: "/database/时序数据库时区设计" }
           ],
         },
       ],
